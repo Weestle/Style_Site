@@ -8,14 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="background">
-        <p>ZXCZCXZCZCZC</p>
-    </div>
     <div class="header">
         <h1 class="logo_text">SPACEWORK</h1>
         <div class="ent_reg">        
-            <a class="enter" href="#main">вход</a>
-            <a class="register" href="/register.htm">регистрация</a>
+            <a class="enter" href="#enter_blackout">вход</a>
+            <a class="register" href="#register_blackout">регистрация</a>
         </div>
     </div>
 
@@ -31,7 +28,6 @@
         </div>
         
         <div class="space">
-
 
             <div class="left_list">
                 <p class="list_title">Список 1</p>
@@ -233,10 +229,40 @@
             </div>
         </div>
     </div>
-    <a href="#" id="main">
-        <div id="okno">
-          Всплывающее окошко!
+    
+    <div id="enter_blackout">
+        <div id="enter_window">
+          <p class="enter_title">Вход</p>
+          <input class="enter_login" type="text" placeholder="Логин" >
+          <input class="enter_password" type="password" placeholder="Пароль">
+          <div class="enter_save_remember">
+              <input class="saveme_cb" type="checkbox" id="saveme_cb">
+              <label id="saveme_text" for="saveme_cb">Запомнить меня</label>
+              <a class="forgot_password"href="/LOH.html">Забыли пароль?</a>
+          </div>
+          <div class="enter_btn_div">
+              <a class="enter_btn" href="#">Войти</a>
+          </div>  
+          <div class="register_acc_div">
+              <a class="register_acc" href="#register_blackout">Нет аккаунта? Зарегестрироваться</a>
+            </div>        
         </div>
-    </a>
+    </div>
+
+    <div id="register_blackout">
+        <div id="register_window">
+            <p class="register_title">Регистрация</p>
+            <input class="register_login" type="text" placeholder="Логин" >
+            <input class="register_email" type="email" placeholder="Email" >
+            <input class="register_password_first" type="password" placeholder="Пароль" >
+            <input class="register_password_second" type="password" placeholder="Повторите пароль" >
+            <div class="register_btn_div">
+                <a class="register_btn" href="#">Зарегистрироваться</a>
+            </div>
+            <div class="have_acc_enter_div">
+                <a class="have_acc_enter" href="#enter_blackout">Есть аккаунт? Войти</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -246,30 +246,244 @@ body {
 }
 
 
-#main {
-  display: none;
+#enter_blackout {
+  backdrop-filter: blur(3px);
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  display: none;
 }
 
-#okno {
-  width: 500px;
-  height: 100px;
+#enter_window {
+  width: 300px;
+  height: 370px;
   text-align: center;
   padding: 15px;
-  border: 3px solid #0000cc;
-  border-radius: 10px;
+  box-shadow: 0 0px 10px rgba(20,43,111,1), 0 0px 10px rgba(20,43,111,0.2);
+  border-radius: 45px;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
-  background-color: rgb(246, 246, 246);
-  backdrop-filter: blur(5px);
+  background: rgb(246,246,246);
 }
 
-#main:target {display: block;}
+#enter_blackout:target {display: block;}
+
+#register_blackout {
+  backdrop-filter: blur(3px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#register_window {
+  width: 300px;
+  height: 420px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 0px 10px rgba(20,43,111,1), 0 0px 10px rgba(20,43,111,0.2);
+  border-radius: 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: rgb(246,246,246);
+}
+
+#register_blackout:target {display: block;}
+
+.enter_login {
+  width: 280px;
+  padding-left: 20px;
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 0px 5px rgba(0,0,0,0.2), 0 0px 6px rgba(0,0,0,0.2)
+}
+
+.enter_login:focus {
+  outline: none;
+}
+
+.enter_password {
+  width: 280px;
+  padding-left: 20px;
+  margin-top: 10px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 0px 5px rgba(0,0,0,0.2), 0 0px 6px rgba(0,0,0,0.2)
+}
+
+.enter_password:focus {
+  outline: none;
+}
+
+.enter_title {
+  margin-top: 10px;
+  color: rgb(41,62,123);
+  font-size: 35px;
+}
+
+.enter_save_remember {
+  margin-top: 10px;
+  display: flex;
+}
+
+.saveme_cb {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.saveme_cb:hover {
+  cursor: pointer;
+}
+
+#saveme_text {
+  padding-top: 2px;
+  font-size: 16px;
+}
+
+#saveme_text:hover {
+  cursor: pointer;
+}
+
+.forgot_password {
+  color: rgb(41,62,123);
+  margin-left: 25px;
+  padding-top: 2px;
+  font-size: 16px;
+}
+
+.register_acc {
+  margin-top: 10px;
+  color: rgb(41,62,123);
+  font-size: 16px;
+}
+
+.enter_btn {
+  width: 100px;
+  padding-left: 117px;
+  padding-right: 117px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  background-color: rgb(20,43,111);
+  color: white;
+  font-size: 24px;
+}
+.enter_btn_div {
+  margin-top: 50px;
+}
+
+.enter_btn:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(20,43,111);
+  transition: all 0.15s ease;
+}
+
+.register_acc_div {
+  margin-top: 50px;
+}
+
+.register_login {
+  width: 280px;
+  padding-left: 20px;
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 0px 5px rgba(0,0,0,0.2), 0 0px 6px rgba(0,0,0,0.2)
+}
+
+.register_login:focus {
+  outline: none;
+}
+
+.register_email {
+  width: 280px;
+  padding-left: 20px;
+  margin-top: 10px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 0px 5px rgba(0,0,0,0.2), 0 0px 6px rgba(0,0,0,0.2)
+}
+
+.register_email:focus {
+  outline: none;
+}
+
+.register_password_first {
+  width: 280px;
+  padding-left: 20px;
+  margin-top: 10px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 0px 5px rgba(0,0,0,0.2), 0 0px 6px rgba(0,0,0,0.2)
+}
+
+.register_password_first:focus {
+  outline: none;
+}
+
+.register_password_second {
+  width: 280px;
+  padding-left: 20px;
+  margin-top: 10px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 0px 5px rgba(0,0,0,0.2), 0 0px 6px rgba(0,0,0,0.2)
+}
+
+.register_password_second:focus {
+  outline: none;
+}
+
+.register_title {
+  margin-top: 10px;
+  color: rgb(41,62,123);
+  font-size: 35px;
+}
+
+.register_btn {
+  width: 100px;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  background-color: rgb(20,43,111);
+  color: white;
+  font-size: 24px;
+}
+
+.register_btn_div {
+  margin-top: 50px;
+}
+
+.register_btn:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(20,43,111);
+  transition: all 0.15s ease;
+}
+
+.have_acc_enter_div {
+  margin-top: 10px;
+}
+.have_acc_enter {
+  margin-top: 10px;
+  color: rgb(41,62,123);
+  font-size: 16px;
+}
